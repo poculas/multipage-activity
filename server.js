@@ -10,8 +10,16 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
 })
 
-app.get('/contact', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'contact.html'));
+app.get('/contacts', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'contacts.html'));
+})  
+
+app.get('/about', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'about.html'));
+})  
+
+app.get('/data/posts', (req, res) => {
+    res.sendFile(path.join(__dirname, 'data', 'post.json'));
 })  
 
 app.listen(PORT, () => {
