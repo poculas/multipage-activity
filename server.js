@@ -19,7 +19,7 @@ app.get('/about', (req, res) => {
 })  
 
 app.get('/data/posts', (req, res) => {
-    res.sendFile(path.join(__dirname, 'data', 'post.json'));
+    res.sendFile(path.join(__dirname, 'data', 'posts.json'));
 })  
 
 app.listen(PORT, () => {
